@@ -1,4 +1,4 @@
-# projeto_diabetes_2
+# Aplicativo DM
 
 A new Flutter project.
 
