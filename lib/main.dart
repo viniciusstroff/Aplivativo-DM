@@ -6,6 +6,7 @@ import 'package:projeto_diabetes/Diabetes/DiabetesTiposPage.dart';
 import 'package:projeto_diabetes/Diagnostico/AvaliacaoDiagnosticoHomePage.dart';
 import 'package:projeto_diabetes/Diagnostico/CriteriosLaboratoriasParaDiagnosticoDeDmPage.dart';
 import 'package:projeto_diabetes/Diagnostico/CriteriosLaboratoriasParaDiagnosticoDeNormoglicemiaPage.dart';
+import 'package:projeto_diabetes/FaleConosco/FaleConoscoPage.dart';
 import 'package:projeto_diabetes/Glicemia/AutomonitoracaoPage.dart';
 import 'package:projeto_diabetes/Glicemia/GlicemiaCapilarPage.dart';
 import 'package:projeto_diabetes/Glicemia/GlicemiaHomePage.dart';
@@ -42,8 +43,7 @@ import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/IportPage.dart';
 import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/TratamentoIntensivoPage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasHomePage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasPage.dart';
-import 'package:projeto_diabetes/aplicateInsulin/FirstApplicationInsulinPage.dart';
-import 'package:projeto_diabetes/aplicateInsulin/SecondApplicationInsulinPage.dart';
+import 'package:projeto_diabetes/SobreDesenvolvimento/SobreDesenvolvimentoPage.dart';
 import 'package:projeto_diabetes/curiosities/CuriositiesHomePage.dart';
 import 'package:projeto_diabetes/curiosities/DiaMundialDiabetesPage.dart';
 
@@ -151,6 +151,12 @@ class MyApp extends StatelessWidget {
         //INSUMOS
         '/insumos-homepage': (context) => InsumosHomePage(),
         '/descarte-de-insumos-domiciliar': (context) => DescarteDeInsumosDocimiciliarPage(),
+
+        //FALE CONOSCO
+        '/fale-conosco': (context) => FaleConoscoPage(),
+
+        //SOBRE DESENVOLVIMENTO
+        '/sobre-desenvolvimento': (context) => SobreDesenvolvimento()
       },
     );
   }

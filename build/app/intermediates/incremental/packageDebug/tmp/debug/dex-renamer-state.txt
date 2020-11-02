@@ -1,4 +1,4 @@
-#Sat Oct 24 19:38:57 BRT 2020
-base.0=/home/creedence/development/projeto_diabetes_2/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Mon Nov 02 15:52:47 BRT 2020
+base.0=C\:\\Desenvolvimento\\vinicius\\projeto_diabetes\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
