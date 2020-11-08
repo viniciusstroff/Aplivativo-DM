@@ -23,56 +23,54 @@ class DashboardBody extends StatelessWidget {
       scrollDirection: Axis.vertical,
       children: <Widget>[
         FittedBox(
-          child: Container(
-            // height: MediaQuery.of(context).size.height,color: Colors.red,
-            child: Column(
-              children: [
-                Row(
-                  // mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CategoryItemWidget(
-                        categoryModel: getCategory('sinais-e-sintomas'),
-                        route: '/diabetes-homepage'),
-                    CategoryItemWidget(
-                        categoryModel: getCategory('avaliacao-e-diagnostico'),
-                        route: '/avaliacao-e-diagnostico-homepage'),
-                  ],
-                ),
-                Row(
-                  // mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CategoryItemWidget(
-                        categoryModel: getCategory('insumos'),
-                        route: '/insumos-homepage'),
-                    CategoryItemWidget(
-                        categoryModel: getCategory('glicemia'),
-                        route: '/glicemia-homepage'),
-                  ],
-                ),
-                Row(
-                  // mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CategoryItemWidget(
-                        categoryModel: getCategory('insulina'),
-                        route: '/insulina-homepage'),
-                    CategoryItemWidget(
-                        categoryModel:
-                            getCategory('hipoglicemia-e-cetoacidose'),
-                        route: '/hipoglicemia-e-cetoacidose-homepage'),
-                  ],
-                ),
-                Row(
-                  // mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CategoryItemWidget(
-                        categoryModel:
-                            getCategory('locais-e-tecnincas-de-aplicacao'),
-                        route: '/aplicando-insulina-homepage'),
-                    Spacer(),
-                  ],
-                ),
-              ],
-            ),
+          child: Column(
+            children: [
+              Row(
+                // mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CategoryItemWidget(
+                      categoryModel: getCategory('sinais-e-sintomas'),
+                      route: '/diabetes-homepage'),
+                  CategoryItemWidget(
+                      categoryModel: getCategory('avaliacao-e-diagnostico'),
+                      route: '/avaliacao-e-diagnostico-homepage'),
+                ],
+              ),
+              Row(
+                // mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CategoryItemWidget(
+                      categoryModel: getCategory('insumos'),
+                      route: '/insumos-homepage'),
+                  CategoryItemWidget(
+                      categoryModel: getCategory('glicemia'),
+                      route: '/glicemia-homepage'),
+                ],
+              ),
+              Row(
+                // mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CategoryItemWidget(
+                      categoryModel: getCategory('insulina'),
+                      route: '/insulina-homepage'),
+                  CategoryItemWidget(
+                      categoryModel:
+                          getCategory('hipoglicemia-e-cetoacidose'),
+                      route: '/hipoglicemia-e-cetoacidose-homepage'),
+                ],
+              ),
+              Row(
+                // mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CategoryItemWidget(
+                      categoryModel:
+                          getCategory('locais-e-tecnincas-de-aplicacao'),
+                      route: '/aplicando-insulina-homepage'),
+                  CategoryItemWidget(categoryModel: getCategory(''))
+                  
+                ],
+              ),
+            ],
           ),
         ),
       ],

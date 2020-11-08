@@ -27,8 +27,7 @@ class CanetasPage extends StatelessWidget {
                     SimpleTextComponent(text:'Em 2019, o Sistema Único de Saúde (SUS) iniciou a dispensação de caneta de insulina descartável, uma grande conquista para o tratamento com insulina no Brasil.'),
 
                     imageDetails2(context, text:'Canetas permanentes ou reutilizáveis', image:'assets/images/canetas_permanentes.jpeg', tagname: 'canetas-permanentes'),
-                    imageDetails2(context, text:'Canetas descartáveis', image:'assets/images/canetas_descartaveis.jpeg', tagname: 'canetas-descartaveis'),
-                    imageDetails2(context, text:'', image:'assets/images/agulhas.jpeg', tagname:'agulhas')
+                    imageDetails2(context, text:'Canetas descartáveis', image:'assets/images/canetas_descartaveis.jpeg', tagname: 'canetas-descartaveis')
                   ],
                 ),
               )

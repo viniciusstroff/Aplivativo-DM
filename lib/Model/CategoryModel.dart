@@ -28,6 +28,9 @@ getCategory(String index) {
       return CategoryModel("Hipoglicemia e Cetoacidose", "", Colors.lime.shade300);
     case 'insumos':
       return CategoryModel("Insumos", "", Colors.red.shade300);
+    case '':
+      return CategoryModel('', '', Colors.white);
+
     
   }
 }

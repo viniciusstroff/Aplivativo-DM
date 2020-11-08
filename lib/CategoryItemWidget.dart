@@ -13,7 +13,7 @@ class CategoryItemWidget extends StatelessWidget {
     return Container(
       // color: Colors.grey.shade500,
       height: MediaQuery.of(context).size.height*0.4,
-      width: MediaQuery.of(context).size.width* 0.7,
+      width: MediaQuery.of(context).size.width* 0.6,
 
       margin: EdgeInsets.all(5.0),
       decoration: BoxDecoration(
@@ -41,7 +41,7 @@ class CategoryItemWidget extends StatelessWidget {
             style: TextStyle(
                 color: Colors.black.withOpacity(0.8),
                 fontWeight: FontWeight.bold,
-                fontSize: 26.0),
+                fontSize: 28.0),
           ),
         ),
       ),

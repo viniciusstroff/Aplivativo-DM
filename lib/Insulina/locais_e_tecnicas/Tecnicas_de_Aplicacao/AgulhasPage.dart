@@ -16,7 +16,6 @@ class AgulhasPage extends StatelessWidget {
             margin: EdgeInsets.all(1.0),
             child: Column(children: [
               SimpleTitleComponent(text: 'Agulhas',),
-              imageDetails2(context, image: 'assets/images/agulhas-ponta.PNG', tagname: 'agulhas-ponta', height: 20),
              
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -30,8 +29,11 @@ class AgulhasPage extends StatelessWidget {
               ),
               textAlingRight(context,
                   text:
-                      "(SBD, 2019-2020)")
+                      "(SBD, 2019-2020)"),
+              imageDetails2(context, image: 'assets/images/agulhas-ponta.PNG', tagname: 'agulhas-ponta', height: 10),
+              imageDetails2(context, text:'', image:'assets/images/agulhas.jpeg', tagname:'agulhas-tamanho', height:10)
             ]),
+              
           ),
         ]),
       )
