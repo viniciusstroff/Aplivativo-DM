@@ -44,8 +44,9 @@ import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/TratamentoIntensi
 import 'package:projeto_diabetes/Referencias/ReferenciasHomePage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasPage.dart';
 import 'package:projeto_diabetes/SobreDesenvolvimento/SobreDesenvolvimentoPage.dart';
-import 'package:projeto_diabetes/curiosities/CuriositiesHomePage.dart';
-import 'package:projeto_diabetes/curiosities/DiaMundialDiabetesPage.dart';
+import 'package:projeto_diabetes/curiosidades/CuriositiesHomePage.dart';
+import 'package:projeto_diabetes/curiosidades/DiaMundialDiabetesPage.dart';
+import 'package:projeto_diabetes/curiosidades/EpidemiologiaPage.dart';
 
 import 'HomeDashboard.dart';
 
@@ -75,9 +76,10 @@ class MyApp extends StatelessWidget {
         //CURIOSIDADES
         '/curiosidades-homepage':(context) => CuriositiesHomePage(),
         '/dia-mundial-do-diabetes-page':(context) => DiaMundialDiabetesPage(),
+        '/epidemiologia-dm': (context)  => EpidemiologiaPage(),
 
         //REFERENCIAS
-        '/referencias-homepage':(context) => ReferenciasHomePage(),
+        '/referencias-homepage': (context) => ReferenciasHomePage(),
         '/referencias-page': (context) => ReferenciasPage(),
         
         //DIABETES
@@ -157,6 +159,7 @@ class MyApp extends StatelessWidget {
 
         //SOBRE DESENVOLVIMENTO
         '/sobre-desenvolvimento': (context) => SobreDesenvolvimento()
+
       },
     );
   }
