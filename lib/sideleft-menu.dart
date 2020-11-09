@@ -37,7 +37,7 @@ class _SideLeftMenuState extends State<SideLeftMenu> {
           ),
           ListTile(
             leading: Icon(Icons.help),
-            title: Text("14 de Novembro - Dia Mundial do Diabetes"),
+            title: Text("Curiosidades"),
             onTap: () {
               Navigator.pushNamed(context, '/curiosidades-homepage');
             },
@@ -61,12 +61,11 @@ class _SideLeftMenuState extends State<SideLeftMenu> {
           Divider(),
           ListTile(
             leading: Icon(Icons.mail),
-            title: Text('Fale Conosco  $_text'),
+            title: Text('Fale Conosco'),
             onTap: (){
               Navigator.pushNamed(context, '/fale-conosco');
-              // _sendEmail();
             },
-          )
+          ),
         ]),
       ),
     );

@@ -39,15 +39,15 @@ class CronologiaDaInsulinaPage extends StatelessWidget {
 Widget imageDetails2(context, String image, {String tagname, String text, String title}) {
   return Container(
     child: Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisSize: MainAxisSize.max,
+      // crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   mainAxisSize: MainAxisSize.max,
       children: <Widget>[
         GestureDetector(
           child: Hero(
             tag: tagname,
             child: Image.asset(image,
                 width: MediaQuery.of(context).size.width ,
-                height: MediaQuery.of(context).size.height *0.5 
+                height: MediaQuery.of(context).size.height *0.4 
                 ),
           ),
           onTap: () {
