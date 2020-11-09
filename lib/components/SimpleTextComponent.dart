@@ -17,6 +17,7 @@ class SimpleTextComponent extends StatelessWidget
           text,
           style: TextStyle(
               fontSize: textSize, letterSpacing: 0.5, color: Colors.black),
+          textAlign: TextAlign.justify,
         ),
       ),
     ]);

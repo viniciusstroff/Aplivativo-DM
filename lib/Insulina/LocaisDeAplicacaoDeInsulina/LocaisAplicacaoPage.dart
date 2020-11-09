@@ -7,7 +7,6 @@ import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
 import 'package:projeto_diabetes/components/WarningMessageComponent.dart';
 import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
 
-
 class LocaisAplicacaoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,12 +22,16 @@ class LocaisAplicacaoPage extends StatelessWidget {
               SliverList(
                 delegate: SliverChildListDelegate(
                   [
-                    SimpleTextComponent(text:'Os locais recomendados para aplicação de insulina são aqueles afastados de articulações, ossos, grandes vasos sanguíneos e nervos, e de fácil acesso para possibilitar a autoaplicação. São eles:'),
+                    SimpleTextComponent(
+                        text:
+                            'Os locais recomendados para aplicação de insulina são aqueles afastados de articulações, ossos, grandes vasos sanguíneos e nervos, e de fácil acesso para possibilitar a autoaplicação. São eles:'),
                     // teste2(context, 'assets/images/locais-de-aplicacao.jpeg'),
                     detailsBody(context),
                     Divider(),
-                    WarningMessageComponent( text: 'Atenção: considerar dedos de quem está recebendo a insulina.',),
-                    
+                    WarningMessageComponent(
+                      text:
+                          'Atenção: considerar dedos de quem está recebendo a insulina.',
+                    ),
                   ],
                 ),
               )
@@ -141,11 +144,12 @@ Widget imageDetails2(context, String image, [String text]) {
         ),
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return ImageDetails('Locais de Aplicação', text, image, 'locais-de-aplicacao');
+            return ImageDetails(
+                'Locais de Aplicação', text, image, 'locais-de-aplicacao');
           }));
         },
       ),
-       Text(text != null ? text : '',
+      Text(text != null ? text : '',
           style: TextStyle(
             fontSize: 16,
           ))
