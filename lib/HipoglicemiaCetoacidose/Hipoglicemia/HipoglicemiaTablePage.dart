@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/Model/hipoglicemia.dart';
+import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/data/data.dart';
 
 
@@ -30,7 +31,7 @@ class HipoglicemiaTablePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    textAlingRight(context, text: "Insulinas - Insulinizando o paciente com diabetes - (2019)")
+                    ReferenceTextComponent(text: "Insulinas - Insulinizando o paciente com diabetes - (2019)")
                   ]),
                 ),
               ]
@@ -43,20 +44,6 @@ class HipoglicemiaTablePage extends StatelessWidget {
 
   
 }
- Widget textAlingRight(context, {String text}){
-    return 
-      Align( 
-      alignment: Alignment.bottomRight,
-      child:Padding(
-        padding: const EdgeInsets.all(10),
-        child: Container(
-        // margin: EdgeInsets.all(10),
-        // alignment: Alignment.bottomRight,
-        child: Text(text,style: TextStyle(fontSize: 14, color:Colors.black))
-    ),
-      ));
-
-  }
 
 Widget buildDataTable(context) {
   bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;

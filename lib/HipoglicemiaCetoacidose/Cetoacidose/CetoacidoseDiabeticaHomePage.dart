@@ -23,8 +23,7 @@ class _CetoacidoseDiabeticaHomePageState
   //   CetoacidoseDiabeticaTratamentoPage(): "Cetoacidose Diabética - CAD - Tratamento"
   // };
   List pages = [
-    CetoacidoseDiabeticaPage(
-        text: ""),
+    CetoacidoseDiabeticaPage(text: ""),
     CetoacidoseDiabeticaSinaisSintomasPage(text: ""),
     CetoacidoseDiabeticaTratamentoPage()
   ];
@@ -61,26 +60,25 @@ class _CetoacidoseDiabeticaHomePageState
           automaticallyImplyLeading: true,
           leading: previousPage,
           centerTitle: true,
-          title: 
-          FittedBox(fit:BoxFit.fitWidth, 
-          child:  Text(
-            titles[currentIndex],
-            maxLines: 3,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
+          title: FittedBox(
+            fit: BoxFit.fitWidth,
+            child: Text(
+              titles[currentIndex],
+              maxLines: 3,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+              ),
+              textAlign: TextAlign.justify,
             ),
           ),
-          ),
-          
-         
           actions: [nextPage],
         ),
         body: PageView(
           controller: pageController,
           children: <Widget>[
             ...pages,
-            ],
+          ],
           onPageChanged: (index) {
             setState(() {
               currentIndex = index;
@@ -90,12 +88,3 @@ class _CetoacidoseDiabeticaHomePageState
         ));
   }
 }
-
-Widget textAlingRight(context, {String text}){
-    return Container(
-      margin: EdgeInsets.all(10),
-      alignment: Alignment.bottomRight,
-      child: Text(text,style: TextStyle(fontSize: 16, color:Colors.black))
-    );
-
-  }

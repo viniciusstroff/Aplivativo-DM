@@ -13,7 +13,7 @@ class ReferenceTextComponent extends StatelessWidget implements PreferredSizeWid
     return Container(
       margin: EdgeInsets.all(10),
       alignment: alignment,
-      child: Text(text ,style: TextStyle(fontSize: fontSize, color:Colors.black))
+      child: Text(text ,style: TextStyle(fontSize: fontSize, color:Colors.black), textAlign: TextAlign.justify)
     );
   }
 

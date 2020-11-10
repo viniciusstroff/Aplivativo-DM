@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
-class SimpleTextWithPointComponent extends StatelessWidget implements PreferredSizeWidget {
+class SimpleTextWithPointComponent extends StatelessWidget
+    implements PreferredSizeWidget {
   final String text;
   final double textSize;
-  SimpleTextWithPointComponent({Key key, this.text, this.textSize = 16}) : super(key: key);
+  SimpleTextWithPointComponent({Key key, this.text, this.textSize = 16})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,16 +19,22 @@ class SimpleTextWithPointComponent extends StatelessWidget implements PreferredS
           Expanded(
             flex: 1,
             child: Icon(
-            Icons.fiber_manual_record,
-            size: 10.0,
-          ),
+              Icons.fiber_manual_record,
+              size: 10.0,
+            ),
           ),
           Expanded(
-            flex: 15,
-            child: 
-          Title(color: Colors.black, child: Text(text, style:TextStyle(fontSize: textSize,letterSpacing: 0.5, color: Colors.black),))
-          )
-          
+              flex: 15,
+              child: Title(
+                  color: Colors.black,
+                  child: Text(
+                    text,
+                    style: TextStyle(
+                        fontSize: textSize,
+                        letterSpacing: 0.5,
+                        color: Colors.black),
+                    textAlign: TextAlign.justify,
+                  )))
         ],
       ),
     );
@@ -36,4 +43,3 @@ class SimpleTextWithPointComponent extends StatelessWidget implements PreferredS
   @override
   Size get preferredSize => const Size.fromHeight(150.0);
 }
-

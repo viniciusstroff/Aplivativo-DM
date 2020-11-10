@@ -25,8 +25,6 @@ class HipoglicemiaCetoacidoseHomePage extends StatelessWidget {
 
                       CategoryRowWidget(
                           title: 'Cetoacidose Diabética - CAD', route: '/glicemia-cetoacidose-diabetica-homepage'),
-                      
-                        
                           
                     ],
                   )

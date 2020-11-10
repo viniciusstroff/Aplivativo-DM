@@ -29,6 +29,7 @@
 .pub-cache/
 .pub/
 /build/
+.build
 
 # Web related
 lib/generated_plugin_registrant.dart
@@ -40,4 +41,7 @@ lib/generated_plugin_registrant.dart
 .packages
 .dart_tool/package_config.json
 .vscode/launch.json
+.packages
+.dart_tool/package_config.json
+.flutter-plugins-dependencies
 .packages
