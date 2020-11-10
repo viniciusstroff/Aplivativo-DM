@@ -1,12 +1,13 @@
 # Aplicativo DM
 
-A new Flutter project.
+Meu primeiro projeto em flutter, projeto sobre diabetes mellitus
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+git clone https://github.com/viniciusstroff/Aplivativo-DM.git
+flutter clean
+flutter upgrade packages
+flutter run...
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)

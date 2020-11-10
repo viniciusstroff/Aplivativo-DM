@@ -43,3 +43,4 @@ class SimpleTextWithPointComponent extends StatelessWidget
   @override
   Size get preferredSize => const Size.fromHeight(150.0);
 }
+
