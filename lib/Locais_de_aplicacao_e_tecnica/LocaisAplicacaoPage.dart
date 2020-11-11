@@ -4,6 +4,7 @@ import 'package:projeto_diabetes/CustomAppBar.dart';
 import 'package:drop_cap_text/drop_cap_text.dart';
 import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
+import 'package:projeto_diabetes/components/WarningMessageComponent.dart';
 import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
 
 
@@ -26,7 +27,7 @@ class LocaisAplicacaoPage extends StatelessWidget {
                     // teste2(context, 'assets/images/locais-de-aplicacao.jpeg'),
                     detailsBody(context),
                     Divider(),
-                    warningMessage(context,
+                    WarningMessageComponent(text:
                         'Atenção: considerar dedos de quem está recebendo a insulina.')
                   ],
                 ),

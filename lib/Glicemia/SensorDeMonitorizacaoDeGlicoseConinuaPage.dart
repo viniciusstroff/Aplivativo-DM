@@ -15,7 +15,7 @@ class SensorDeMonitorizacaoDeGlicoseConinuaPage extends StatelessWidget {
               [
                 SimpleTextComponent(text:'O SMCG é formado por aparelhos, minimamente invasivos, que registram e exibem o valor, a direção e a magnitude da alteração dos níveis de glicose intersticial, por meio de um sensor subcutâneo.'),
                 // Divider(),
-                Text("\n"),
+                // Text("\n"),
                 imageDetails2(context, 'assets/images/sensor-de-glicose-continuo.png', 'sensor-glicose', '(SBD, 2019-2020)'),
               ],
             ),

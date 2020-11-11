@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_diabetes/CustomAppBar.dart';
 
 class ImageDetails extends StatelessWidget {
   final String title;
@@ -28,6 +27,14 @@ class ImageDetails extends StatelessWidget {
 }
 
 Widget expandedImage(context, [tag, image, text]) {
+ bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double height = isPortrait
+      ? MediaQuery.of(context).size.height 
+      : MediaQuery.of(context).size.height ;
+
+  double width = isPortrait
+      ? MediaQuery.of(context).size.width 
+      : MediaQuery.of(context).size.width ;
   return Column(
 
     children: <Widget>[
@@ -37,8 +44,8 @@ Widget expandedImage(context, [tag, image, text]) {
           child: Container(
             child: Image.asset(
               image,
-              width: MediaQuery.of(context).size.width ,
-              // height: MediaQuery.of(context).size.height,
+              width: width,
+              height: height ,
             ),
           ),
         ),

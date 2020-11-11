@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/CustomAppBar.dart';
+import 'package:projeto_diabetes/components/ImageDetails.dart';
 
 class TratamentoIntensivoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: CustomAppBar(title: 'Número de Aplicações no tratamento intensivo'),
         body: Container(
           child: CustomScrollView(
             slivers: <Widget>[
@@ -40,7 +40,7 @@ Widget detailsBody(context) {  return Container(
           Column(
             children: <Widget>[
 
-                  imageDetails(context, 'assets/images/multiplas-doses-insulina.jpeg', '*MDI: Múltiplas doses de insulina'),
+                  imageDetails2(context, 'assets/images/multiplas-doses-insulina.jpeg', '', '*MDI: Múltiplas doses de insulina'),
    
             ],
           )
@@ -48,18 +48,35 @@ Widget detailsBody(context) {  return Container(
       ));
 }
 
-Widget imageDetails(context, String image, [String text]) {
+Widget imageDetails2(context, String image, [String tagname, String text]) {
+   bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double height = isPortrait
+      ? MediaQuery.of(context).size.height /2
+      : MediaQuery.of(context).size.height /1.5 ;
 
+  double width = isPortrait
+      ? MediaQuery.of(context).size.width * 0.80
+      : MediaQuery.of(context).size.width /2;
   return Container(
-    padding: const EdgeInsets.only(bottom:20.0, top: 20.0, left: 5.0, right: 5.0),
-    
     child: Column(
       children: <Widget>[
-        Image.asset(image, width: 320,),
-        Align(
-          alignment: Alignment.centerRight,
-          child: Text(text !=null ? text : '', style: TextStyle( fontSize: 14,)),
-        )
+        GestureDetector(
+          child: Hero(
+            tag: tagname,
+            child: Image.asset(image,
+                width: width,
+                height: height),
+          ),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return ImageDetails('i-Port', '', image, tagname);
+            }));
+          },
+        ),
+         Text(text != null ? text : '',
+            style: TextStyle(
+              fontSize: 16,
+            ))
       ],
     ),
   );

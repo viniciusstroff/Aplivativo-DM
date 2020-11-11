@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Hipoglicemia/HipoglicemiaComoReverterPage.dart';
-import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Hipoglicemia/HipoglicemiaTablePage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AgulhasPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AplicarInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/CanetasPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/HomogeneizacaoPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/IportPage.dart';
-import 'package:projeto_diabetes/Insulina/LocaisDeAplicacaoDeInsulina/LocaisAplicacaoPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TecnicasDeAplicacaoDeInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TratamentoIntensivoPage.dart';
 
@@ -104,72 +101,5 @@ class _TecnicasDeAplicacaoHomePageState extends State<TecnicasDeAplicacaoHomePag
           
 
   }
-
-  Widget teste(context, text) {
-    return Container(
-      child: Column(children: <Widget>[
-        Container(
-          // margin: EdgeInsets.only(bottom: 10),
-          padding: EdgeInsets.all(10),
-          child: Text(
-            text,
-            style: TextStyle(fontSize: 13),
-          ),
-        ),
-      ]),
-    );
-  }
-
-  Widget textWithPoint(context, {String title}) {
-    return Container(
-      padding: EdgeInsets.all(10),
-      // width: 20,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Expanded(
-            flex: 1,
-            child: Icon(
-            Icons.fiber_manual_record,
-            size: 10.0,
-          ),
-          ),
-          Expanded(
-            flex: 15,
-            child: 
-          Title(color: Colors.black, child: Text(title))
-          )
-          
-        ],
-      ),
-    );
-  }
-
-Widget textWithSomeWordsBold(BuildContext context, {String textBold, String text, String underlinedText, String text2 }) {
-    TextStyle defaultStyle = TextStyle(color: Colors.black, fontSize: 13.0);
-    String hasText2 = (text2 != null) ? text2 :  "";
-    FontWeight boldStyle = FontWeight.bold;
- 
-    return Container(
-      padding: EdgeInsets.only(top:20),
-      child: Column(children: <Widget>[
-        Container(
-            padding: EdgeInsets.all(10),
-            child: RichText(
-              text: TextSpan(
-                style: defaultStyle,
-                children: <TextSpan>[
-                  TextSpan(text: text),
-                  TextSpan(text: textBold, style: TextStyle(fontWeight: boldStyle)),
-                  TextSpan(text: hasText2)
-                ],
-              ),
-            )
-        ),
-      ]
-      ),
-    );
-  }
-
 
 }

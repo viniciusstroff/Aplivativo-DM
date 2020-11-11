@@ -49,30 +49,4 @@ class GlicemiaCapilarPage extends StatelessWidget {
       ),
     );
   }
-
-  Widget imageDetails2(context, String image, [String tagname, String text]) {
-    return Center(
-      child: Column(
-        children: <Widget>[
-          GestureDetector(
-            child: Hero(
-              tag: tagname,
-              child: Image.asset(image,
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 0.5),
-            ),
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ImageDetails('Exercício', '', image, tagname);
-              }));
-            },
-          ),
-          Text(text != null ? text : '',
-              style: TextStyle(
-                fontSize: 11,
-              ))
-        ],
-      ),
-    );
-  }
 }

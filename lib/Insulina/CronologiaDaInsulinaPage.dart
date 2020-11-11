@@ -37,6 +37,15 @@ class CronologiaDaInsulinaPage extends StatelessWidget {
 
 
 Widget imageDetails2(context, String image, {String tagname, String text, String title}) {
+  bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double rowHeight = isPortrait
+      ? MediaQuery.of(context).size.height /2
+      : MediaQuery.of(context).size.height / 1.5;
+
+  double rowWidth = isPortrait
+      ? MediaQuery.of(context).size.width
+      : MediaQuery.of(context).size.width;
+
   return Container(
     child: Column(
       // crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -46,8 +55,8 @@ Widget imageDetails2(context, String image, {String tagname, String text, String
           child: Hero(
             tag: tagname,
             child: Image.asset(image,
-                width: MediaQuery.of(context).size.width ,
-                height: MediaQuery.of(context).size.height *0.4 
+                width: rowWidth, // MediaQuery.of(context).size.width *2 ,
+                height: rowHeight, //MediaQuery.of(context).size.height *0.3 
                 ),
           ),
           onTap: () {

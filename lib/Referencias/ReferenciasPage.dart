@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_diabetes/components/HiperlinkComponent.dart';
-import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
+import 'package:projeto_diabetes/components/SimpleTextWithLinkComponent.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ReferenciasPage extends StatelessWidget {
@@ -16,33 +15,15 @@ class ReferenciasPage extends StatelessWidget {
           SliverList(
             delegate: SliverChildListDelegate(
               [
-                teste(context,
-                    text:
-                        'Federação Internacional de Diabetes. Atlas de Diabetes da IDF, 9a edn. Bruxelas, Bélgica: 2019. Disponível em: ',
-                    url: 'http://www.diabetesatlas.org',
-                    number: 1),
-                teste(context,
-                    text:
-                        'Diretrizes da Sociedade Brasileira de Diabetes - SBD (2019-2020)',
-                    number: 2),
-                teste(context,
-                    text:
-                        'Insulinas - Insulinizando o paciente com diabetes - (2019)',
-                    number: 3),
-                teste(context, text: 'ADA', number: 4),
-                teste(context, text: 'ISPAD', number: 5),
-                teste(context,
-                    url:
-                        'https://www.diabetes.org.br/publico/dia-mundial-do-diabetes-2017',
-                    number: 6),
-                teste(context,
-                    text:
-                        'ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidosis and the hyperglycemic hyperosmolar state',
-                    number: 7),
-                teste(context,
-                    url:
-                        'https://www.diabetes.org.br/profissionais/images/Posicionamento_Oficial_Sbd_N012020v6_brLC.pdf',
-                    number: 8)
+                SimpleTextWithLinkComponent(text: 'Federação Internacional de Diabetes. Atlas de Diabetes da IDF, 9a edn. Bruxelas, Bélgica: 2019. Disponível em: ', url: 'http://www.diabetesatlas.org', number: 1,),
+                SimpleTextWithLinkComponent(text: 'Diabetes SB. Diretrizes da Sociedade Brasileira de Diabetes 2019-2020. São Paulo: Clannad; 2019. Available from:', url: 'https://www.diabetes.org.br/profissionais/images/DIRETRIZES-COMPLETA-2019-2020.pdf.', number: 2,),
+                SimpleTextWithLinkComponent(text: 'Insulinizando o paciente com diabetes: um enfoque interdisplinar da teoria à prática clínica / [organizadores Balduino Tschiedel, Marcia Puñales]. São Paulo: Editora Clannad, 2019.',  number: 3,),
+                SimpleTextWithLinkComponent(text: 'American Diabetes Association. Glycemic Targets: Standarts of Medical Care in Diabetes-2019. Diabetes Care. 2019;42 (Sippl 1):S61-S70.', number: 4,),
+                SimpleTextWithLinkComponent(text: 'ISPAD - Pocketbook for Management of Diabetes in Childhood and Adolescence in Under-Resourced Countries 2nd Edition. 2017.', number: 5,),
+                SimpleTextWithLinkComponent(url: 'https://www.diabetes.org.br/publico/dia-mundial-do-diabetes-2017', number: 6,),
+                SimpleTextWithLinkComponent(text: 'ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidosis and the hyperglycemic hyperosmolar state', number: 7,),
+                SimpleTextWithLinkComponent(url: 'https://www.diabetes.org.br/profissionais/images/Posicionamento_Oficial_Sbd_N012020v6_brLC.pdf', number: 8,),
+              
               ],
             ),
           ),

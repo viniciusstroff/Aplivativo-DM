@@ -60,6 +60,15 @@ class DispositivosParaAplicacaoInsulinaPage extends StatelessWidget {
 }
 
 Widget imageDetails2(context, {String image, String tagname, String text, double height = 0.5}) {
+  bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double height = isPortrait
+      ? MediaQuery.of(context).size.height /2
+      : MediaQuery.of(context).size.height ;
+
+  double width = isPortrait
+      ? MediaQuery.of(context).size.width 
+      : MediaQuery.of(context).size.width;
+
   return Center(
     child: Column(
       children: <Widget>[
@@ -67,8 +76,8 @@ Widget imageDetails2(context, {String image, String tagname, String text, double
           child: Hero(
             tag: tagname,
             child: Image.asset(image,
-                width: MediaQuery.of(context).size.width ,
-                height: MediaQuery.of(context).size.height * height),
+                width: width, //MediaQuery.of(context).size.width ,
+                height: height),
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {

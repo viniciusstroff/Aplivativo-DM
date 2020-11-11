@@ -10,8 +10,7 @@ class AvaliacaoDiagnosticoHomePage extends StatefulWidget {
       _AvaliacaoDiagnosticoHomePageState();
 }
 
-class _AvaliacaoDiagnosticoHomePageState
-    extends State<AvaliacaoDiagnosticoHomePage> {
+class _AvaliacaoDiagnosticoHomePageState extends State<AvaliacaoDiagnosticoHomePage> {
   PageController pageController = PageController(initialPage: 0);
   int currentIndex = 0;
   String currentTitle = "";

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/Model/agulha.dart';
 import 'package:projeto_diabetes/components/ImageDetails.dart';
+import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTitleComponent.dart';
 import 'package:projeto_diabetes/data/data.dart';
 
@@ -27,7 +28,7 @@ class AgulhasPage extends StatelessWidget {
                   ),
                 ),
               ),
-              textAlingRight(context,
+              ReferenceTextComponent(
                   text:
                       "(SBD, 2019-2020)"),
               imageDetails2(context, image: 'assets/images/agulhas-ponta.PNG', tagname: 'agulhas-ponta', height: 10),
@@ -39,19 +40,6 @@ class AgulhasPage extends StatelessWidget {
       )
     ]));
   }
-}
-
-Widget textAlingRight(context, {String text}) {
-  return Align(
-      alignment: Alignment.bottomRight,
-      child: Padding(
-        padding: const EdgeInsets.all(10),
-        child: Container(
-            // margin: EdgeInsets.all(10),
-            // alignment: Alignment.bottomRight,
-            child: Text(text,
-                style: TextStyle(fontSize: 14, color: Colors.black))),
-      ));
 }
 
 Widget buildDataTable(context) {
@@ -134,6 +122,14 @@ DataCell _dataCell({String agulha, double width}) {
 }
 
 Widget imageDetails2(context, {String image, String tagname, String text, double height = 0.5}) {
+  bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double height = isPortrait
+      ? MediaQuery.of(context).size.height / 5
+      : MediaQuery.of(context).size.height /2;
+
+  double width = isPortrait
+      ? MediaQuery.of(context).size.width /1.2
+      : MediaQuery.of(context).size.width /2;
   return Center(
     child: Column(
       children: <Widget>[
@@ -141,8 +137,8 @@ Widget imageDetails2(context, {String image, String tagname, String text, double
           child: Hero(
             tag: tagname,
             child: Image.asset(image,
-                width: MediaQuery.of(context).size.width ,
-                height: MediaQuery.of(context).size.height / height),
+                width:  width ,
+                height:height),
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {

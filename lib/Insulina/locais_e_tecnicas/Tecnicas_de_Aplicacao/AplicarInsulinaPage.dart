@@ -26,6 +26,14 @@ class AplicarInsulinaPage extends StatelessWidget {
 }
 
 Widget imageDetails2(context, String image, [String tagname, String text]) {
+   bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double height = isPortrait
+      ? MediaQuery.of(context).size.height / 2
+      : MediaQuery.of(context).size.height /2;
+
+  double width = isPortrait
+      ? MediaQuery.of(context).size.width /1.2
+      : MediaQuery.of(context).size.width /1;
   return Container(
     child: Column(
       children: <Widget>[
@@ -33,8 +41,8 @@ Widget imageDetails2(context, String image, [String tagname, String text]) {
           child: Hero(
             tag: tagname,
             child: Image.asset(image,
-                width: MediaQuery.of(context).size.width * 0.80,
-                height: MediaQuery.of(context).size.height * 0.30),
+                width: width,
+                height: height),
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {

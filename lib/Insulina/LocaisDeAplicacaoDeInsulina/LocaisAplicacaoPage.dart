@@ -39,24 +39,6 @@ class LocaisAplicacaoPage extends StatelessWidget {
   }
 }
 
-Widget teste2(context, String image) {
-  final String text =
-      ' \n•Braços: face posterior, três a quatro dedos abaixo da axila e acima do cotovelo (considerar os dedos do indivíduo que receberá a injeção de insulina);\n' +
-          '\n•Glúteos: quadrante superior lateral externo;\n' +
-          '\n•Coxas: face anterior e lateral externa superior, quatro dedos abaixo da virilha e acima do joelho;\n' +
-          '\n•Abdome: regiões laterais direita e esquerda, com distância de três a quatro dedos da cicatriz umbilical.\n';
-  return DropCapText(
-    text,
-    dropCapPosition: DropCapPosition.end,
-    textAlign: TextAlign.justify,
-    dropCap: DropCap(
-      width: MediaQuery.of(context).size.width * 0.6,
-      height: MediaQuery.of(context).size.width * 0.6,
-      child: Image.asset(image),
-    ),
-  );
-}
-
 Widget detailsBody(context) {
   return Column(
     children: <Widget>[

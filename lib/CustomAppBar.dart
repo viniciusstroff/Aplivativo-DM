@@ -11,27 +11,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: <Widget>[
-        // SliverAppBar(
-        //   floating: true,
-          
-        
-        //   // expandedHeight: 200.0,
-        //   flexibleSpace: FlexibleSpaceBar(
-        //       centerTitle: true,
-        //       title: Text(
-        //         title,
-        //         style: TextStyle(
-        //           color: Colors.white,
-        //           fontSize: 25.0,
-        //         ),
-        //       ),
-        //     ),
-        //   // shape: RoundedRectangleBorder(
-        //   //   borderRadius: BorderRadius.vertical(
-        //   //     bottom: Radius.circular(20),
-        //   //   ),
-        //   // ),
-        // )
         CustomSliverAppBar(title: title,)
       ],
     );

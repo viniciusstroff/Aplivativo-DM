@@ -21,7 +21,6 @@ import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Hipoglicemia/Hipoglicem
 import 'package:projeto_diabetes/HipoglicemiaCetoacidose/HipoglicemiaCetoacidoseHomePage.dart';
 import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Hipoglicemia/HipoglicemiaHomePage.dart';
 import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Hipoglicemia/HipoglicemiaTablePage.dart';
-// import 'package:projeto_diabetes/Insulina/FirstInsulinPage.dart';
 import 'package:projeto_diabetes/Insulina/TiposDeInsulinaTempoDeAcaoPage.dart';
 import 'package:projeto_diabetes/Insulina/InsulinaHomePage.dart';
 import 'package:projeto_diabetes/Insulina/AdventoDaInsulinaPage.dart';
@@ -91,12 +90,9 @@ class MyApp extends StatelessWidget {
 
         //INSULINA
         '/insulina-homepage': (context) => InsulinaHomePage(),
-        // '/insulin': (context) => FirstInsulinPage(),
         '/insulina-advento': (context) => AdventoDaInsulinaPage(),
         '/insulina-cronologia': (context) => CronologiaDaInsulinaPage(),
         '/insulina-tipos-tempo-de-acao': (context) => TiposDeInsulinaTempoDeAcaoPage(),
-        // '/insulinApplicationFirst': (context) => FirstApplicationInsulinPage(),
-        // '/insulinApplicationSecond': (context) => SecondApplicationInsulinPage(),
 
         //APLICAÇÃO DE INSULINA LOCAIS E TECNICAS
         '/aplicando-insulina-homepage': (context) => AplicandoInsulinaHomePage(),

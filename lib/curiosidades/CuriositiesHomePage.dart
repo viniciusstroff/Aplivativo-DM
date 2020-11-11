@@ -19,8 +19,7 @@ class _CuriositiesHomePageState extends State<CuriositiesHomePage> {
     DiaMundialDiabetesPage(),
     
   ]; 
-
-
+  
   List<String> titles = [
     "Epidemiologia e impacto\nglobal do diabetes mellitus",
     "14 de Novembro - Dia \nMundial do Diabetes"

@@ -14,10 +14,6 @@ class CategoryDetailScreen extends StatelessWidget {
     return new Scaffold(
       
       backgroundColor: categoryModel.color,
-      // appBar: AppBar(
-      //   backgroundColor: categoryModel.color,
-      //   title: Text(categoryModel.name, style: TextStyle(color: Colors.white)),
-      // ),
       body: Center(
         child: Container(
            width: cwidth,

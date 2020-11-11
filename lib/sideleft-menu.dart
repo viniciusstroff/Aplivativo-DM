@@ -70,15 +70,6 @@ class _SideLeftMenuState extends State<SideLeftMenu> {
       ),
     );
   }
-
-  // void _sendEmail() async {
-  //   var email = Email('viniciusstroff@gmail.com', 'frosthealhs');
-  //   bool result = await email.sendMessage('Ola teste', 'stroffproduction@gmail.com', 'Sem assunto por enquanto');
-
-  //   setState(() {
-  //     _text = result ? 'Enviado.' : 'Não enviado.';
-  //   });
-  // }
   
 }
 

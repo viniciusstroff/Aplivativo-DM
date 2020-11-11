@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
-import 'package:photo_view/photo_view.dart';
 // import 'package:flutter/services.dart';
 
 
@@ -40,6 +39,15 @@ class TiposDeInsulinaTempoDeAcaoPage extends StatelessWidget {
 
 
 Widget imageDetails2(context, String image, {String tagname, String text, String title}) {
+  bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  double height = isPortrait
+      ? MediaQuery.of(context).size.height /2
+      : MediaQuery.of(context).size.height ;
+
+  double width = isPortrait
+      ? MediaQuery.of(context).size.width / 1.1
+      : MediaQuery.of(context).size.width / 1.5;
+
   return Container(
     child: Column(
       children: <Widget>[
@@ -47,8 +55,8 @@ Widget imageDetails2(context, String image, {String tagname, String text, String
           child: Hero(
             tag: tagname,
             child: Image.asset(image,
-                width: MediaQuery.of(context).size.width ,
-                height: MediaQuery.of(context).size.height * 0.5
+                width: width, //MediaQuery.of(context).size.width ,
+                height: height, //MediaQuery.of(context).size.height * 0.5
                 ),
           ),
           onTap: () {

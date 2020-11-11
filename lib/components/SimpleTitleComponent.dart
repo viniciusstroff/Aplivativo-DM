@@ -6,7 +6,7 @@ class SimpleTitleComponent extends StatelessWidget implements PreferredSizeWidge
   final String text;
   final double textSize;
   final Alignment align;
-  SimpleTitleComponent({Key key, this.text, this.textSize = 19, this.align = Alignment.center}) : super(key: key);
+  SimpleTitleComponent({Key key, this.text, this.textSize = 18, this.align = Alignment.center}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
