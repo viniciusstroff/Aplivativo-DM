@@ -32,19 +32,8 @@ class DashboardBody extends StatelessWidget {
                       categoryModel: getCategory('sinais-e-sintomas'),
                       route: '/diabetes-homepage'),
                   CategoryItemWidget(
-                      categoryModel: getCategory('avaliacao-e-diagnostico'),
-                      route: '/avaliacao-e-diagnostico-homepage'),
-                ],
-              ),
-              Row(
-                // mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  CategoryItemWidget(
                       categoryModel: getCategory('insumos'),
                       route: '/insumos-homepage'),
-                  CategoryItemWidget(
-                      categoryModel: getCategory('glicemia'),
-                      route: '/glicemia-homepage'),
                 ],
               ),
               Row(
@@ -54,9 +43,8 @@ class DashboardBody extends StatelessWidget {
                       categoryModel: getCategory('insulina'),
                       route: '/insulina-homepage'),
                   CategoryItemWidget(
-                      categoryModel:
-                          getCategory('hipoglicemia-e-cetoacidose'),
-                      route: '/hipoglicemia-e-cetoacidose-homepage'),
+                      categoryModel: getCategory('glicemia'),
+                      route: '/glicemia-homepage'),
                 ],
               ),
               Row(
@@ -66,8 +54,10 @@ class DashboardBody extends StatelessWidget {
                       categoryModel:
                           getCategory('locais-e-tecnincas-de-aplicacao'),
                       route: '/aplicando-insulina-homepage'),
-                  CategoryItemWidget(categoryModel: getCategory(''))
-                  
+                  CategoryItemWidget(
+                      categoryModel:
+                          getCategory('hipoglicemia-e-cetoacidose'),
+                      route: '/hipoglicemia-e-cetoacidose-homepage'),
                 ],
               ),
             ],

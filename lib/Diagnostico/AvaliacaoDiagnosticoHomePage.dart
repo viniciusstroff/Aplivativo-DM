@@ -16,11 +16,11 @@ class _AvaliacaoDiagnosticoHomePageState extends State<AvaliacaoDiagnosticoHomeP
   String currentTitle = "";
 
   List pages = [
-    CriteriosLaboratoriasParaDiagnosticoDeNormoglicemiaPage(),
+    // CriteriosLaboratoriasParaDiagnosticoDeNormoglicemiaPage(),
     CriteriosLaboratoriasParaDiagnosticoDeDmPage()
   ];
   List<String> titles = [
-    "Critérios Laboratorias\n      para Diagnóstico",
+    // "Critérios Laboratorias\n      para Diagnóstico",
     "Critérios Laboratorias\n      para Diagnóstico"
   ];
 

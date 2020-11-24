@@ -28,18 +28,27 @@ import 'package:projeto_diabetes/Insulina/CronologiaDaInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/AplicandoInsulinaHomePage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/DispositivosParaAplicacaoInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/LocaisDeAplicacaoDeInsulina/LocaisAplicacaoPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AgulhasPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AplicarInsulinaPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/CanetasPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/HomogeneizacaoPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/IportPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TecnicasDeAplicacaoDeInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TecnicasDeAplicacaoHomePage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TratamentoIntensivoPage.dart';
+import 'package:projeto_diabetes/Insumos/ArmazenamentoTransporteValidadeInsulinaPage.dart';
 import 'package:projeto_diabetes/Insumos/DescarteDeInsumosDomiciliarPage.dart';
 import 'package:projeto_diabetes/Insumos/InsumosHomePage.dart';
-import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/AgulhasPage.dart';
-import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/AplicarInsulinaPage.dart';
-import 'package:projeto_diabetes/Insumos/ArmazenamentoTransporteValidadeInsulinaPage.dart';
-import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/CanetasPage.dart';
 import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/HomePage2.dart';
-import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/HomogeneizacaoPage.dart';
-import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/IportPage.dart';
-import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/TratamentoIntensivoPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/AgulhasPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/AplicarInsulinaPage.dart';
+// import 'package:projeto_diabetes/Insumos/ArmazenamentoTransporteValidadeInsulinaPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/CanetasPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/HomePage2.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/HomogeneizacaoPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/IportPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/TratamentoIntensivoPage.dart';
+// import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica2/LocaisAplicacaoPage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasHomePage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasPage.dart';
 import 'package:projeto_diabetes/SobreDesenvolvimento/SobreDesenvolvimentoPage.dart';
@@ -86,6 +95,7 @@ class MyApp extends StatelessWidget {
         '/diabetes-o-que-e': (context) => DiabetesSobrePage(),
         '/diabetes-sinais-e-sintomas': (context) => DiabetesSinaisSintomasPage(),
         '/diabetes-tipos-de-diabetes': (context) => DiabetesTiposPage(),
+        '/diabetes-avaliação-e-diagnostico': (context) =>CriteriosLaboratoriasParaDiagnosticoDeDmPage(),
 
 
         //INSULINA
@@ -93,6 +103,7 @@ class MyApp extends StatelessWidget {
         '/insulina-advento': (context) => AdventoDaInsulinaPage(),
         '/insulina-cronologia': (context) => CronologiaDaInsulinaPage(),
         '/insulina-tipos-tempo-de-acao': (context) => TiposDeInsulinaTempoDeAcaoPage(),
+        '/insulina-nph': (context) => HomogeineizacaoPage(),
 
         //APLICAÇÃO DE INSULINA LOCAIS E TECNICAS
         '/aplicando-insulina-homepage': (context) => AplicandoInsulinaHomePage(),

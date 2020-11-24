@@ -27,7 +27,8 @@ class InsulinaHomePage extends StatelessWidget {
                           title: 'Cronologia da Insulina', route: '/insulina-cronologia'),
                       CategoryRowWidget(
                           title: 'Tipos de insulina e tempo de ação', route: '/insulina-tipos-tempo-de-acao'),
-                   
+                       CategoryRowWidget(
+                          title: 'Insulina NPH', route: '/insulina-nph'),
                       
                         
                           

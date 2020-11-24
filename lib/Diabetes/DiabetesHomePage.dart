@@ -28,6 +28,8 @@ class DiabetesHomePage extends StatelessWidget {
                           title: 'Sinais e Sintomas', route: '/diabetes-sinais-e-sintomas'),
                       CategoryRowWidget(
                           title: 'Tipos de Diabetes', route: '/diabetes-tipos-de-diabetes'),
+                      CategoryRowWidget(
+                          title: 'Avaliação e Diagnóstico', route: '/diabetes-avaliação-e-diagnostico'),
                           
                     ],
                   )

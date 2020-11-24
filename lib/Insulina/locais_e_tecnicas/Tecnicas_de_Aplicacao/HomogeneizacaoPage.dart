@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/CustomAppBar.dart';
 import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
+import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
 import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
 
@@ -11,7 +12,7 @@ class HomogeineizacaoPage extends StatelessWidget {
         body: Container(
           child: CustomScrollView(
             slivers: <Widget>[
-              // CustomSliverAppBar(title: "Homogeneização da\n Insulina NPH",),
+              CustomSliverAppBar(title: "Homogeneização da\n Insulina NPH",),
               SliverList(
                 delegate: SliverChildListDelegate(
                   [
@@ -39,6 +40,7 @@ Widget details(context) {
         
         imageDetails2(context, 'assets/images/homogeneizaao-nph.gif', tagname:'homogeneizacao-nph'),
         imageDetails3(context,'assets/images/homogeneizacao.jpeg'),
+        ReferenceTextComponent(text: 'Jehie PM, et al. Lancet, 1999. 354(9190) 1604-7',),
       ],
     ),
   );
@@ -81,7 +83,7 @@ Widget imageDetails3(context, String image){
             children: <Widget>[
               Image.asset(image,
                   width: MediaQuery.of(context).size.width * 0.6,
-                  height: MediaQuery.of(context).size.height * 0.4),
+                  height: MediaQuery.of(context).size.height * 0.2),
          
             ],
           ),
@@ -110,8 +112,9 @@ Widget imageDetails3(context, String image){
               child: Text('Após 20 ciclos de homogeneização',softWrap: true, style: TextStyle(fontSize: 12)),
             ),
           ],
-        ),)
+        ),),
       
-    ],);
+    ],
+    );
 }
 

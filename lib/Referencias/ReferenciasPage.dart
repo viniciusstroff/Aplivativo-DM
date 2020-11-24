@@ -16,7 +16,7 @@ class ReferenciasPage extends StatelessWidget {
             delegate: SliverChildListDelegate(
               [
                 SimpleTextWithLinkComponent(text: 'Federação Internacional de Diabetes. Atlas de Diabetes da IDF, 9a edn. Bruxelas, Bélgica: 2019. Disponível em: ', url: 'http://www.diabetesatlas.org', number: 1,),
-                SimpleTextWithLinkComponent(text: 'Diabetes SB. Diretrizes da Sociedade Brasileira de Diabetes 2019-2020. São Paulo: Clannad; 2019. Available from:', url: 'https://www.diabetes.org.br/profissionais/images/DIRETRIZES-COMPLETA-2019-2020.pdf.', number: 2,),
+                SimpleTextWithLinkComponent(text: 'Diabetes SB. Diretrizes da Sociedade Brasileira de Diabetes 2019-2020. São Paulo: Clannad; 2019. Disponível em: ', url: 'https://www.diabetes.org.br/profissionais/images/DIRETRIZES-COMPLETA-2019-2020.pdf.', number: 2,),
                 SimpleTextWithLinkComponent(text: 'Insulinizando o paciente com diabetes: um enfoque interdisplinar da teoria à prática clínica / [organizadores Balduino Tschiedel, Marcia Puñales]. São Paulo: Editora Clannad, 2019.',  number: 3,),
                 SimpleTextWithLinkComponent(text: 'American Diabetes Association. Glycemic Targets: Standarts of Medical Care in Diabetes-2019. Diabetes Care. 2019;42 (Sippl 1):S61-S70.', number: 4,),
                 SimpleTextWithLinkComponent(text: 'ISPAD - Pocketbook for Management of Diabetes in Childhood and Adolescence in Under-Resourced Countries 2nd Edition. 2017.', number: 5,),

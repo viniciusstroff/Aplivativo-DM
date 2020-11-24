@@ -25,7 +25,7 @@ class _TecnicasDeAplicacaoHomePageState extends State<TecnicasDeAplicacaoHomePag
     AgulhasPage(),
     AplicarInsulinaPage(),
     TecnicasDeAplicacaoDeInsulinaPage(),
-    HomogeineizacaoPage(),
+    // HomogeineizacaoPage(),
     IportPage(),
     TratamentoIntensivoPage()
 
@@ -42,7 +42,7 @@ class _TecnicasDeAplicacaoHomePageState extends State<TecnicasDeAplicacaoHomePag
     "Técnica de Aplicação de Insulina\ncom os diferentes dispositivos",
     "Onde será aplicada a Insulina?",
     "Técnica de Aplicação de Insulina",
-    "Homogeneização da Insulina NPH",
+    // "Homogeneização da Insulina NPH",
     "i-Port",
     "Número de aplicações\nno tratamento intensivo",
 

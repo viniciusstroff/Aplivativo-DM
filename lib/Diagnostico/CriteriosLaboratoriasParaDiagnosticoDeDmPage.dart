@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/Model/DiagnosticoClass.dart';
 import 'package:projeto_diabetes/Model/DiagnosticoDmClass.dart';
+import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
 import 'package:projeto_diabetes/data/data.dart';
@@ -11,7 +12,7 @@ class CriteriosLaboratoriasParaDiagnosticoDeDmPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(slivers: <Widget>[
-      // CustomSliverAppBar(title: "Critérios Laboratoriais\n   para Diagnóstico",),
+      CustomSliverAppBar(title: "Critérios Laboratoriais\n   para Diagnóstico",),
       SliverList(
         delegate: SliverChildListDelegate([
           Container(
