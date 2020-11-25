@@ -26,13 +26,14 @@ import 'package:projeto_diabetes/Insulina/InsulinaHomePage.dart';
 import 'package:projeto_diabetes/Insulina/AdventoDaInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/CronologiaDaInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/AplicandoInsulinaHomePage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/DispositivosParaAplicacaoInsulinaPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/DispositivosParaAplicacaoInsulinaHomePage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/SeringasPage.dart';
 import 'package:projeto_diabetes/Insulina/LocaisDeAplicacaoDeInsulina/LocaisAplicacaoPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AgulhasPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/AgulhasPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AplicarInsulinaPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/CanetasPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/CanetasPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/HomogeneizacaoPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/IportPage.dart';
+import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Dispositivos_para_Aplicacao/IportPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TecnicasDeAplicacaoDeInsulinaPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TecnicasDeAplicacaoHomePage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TratamentoIntensivoPage.dart';
@@ -107,9 +108,10 @@ class MyApp extends StatelessWidget {
 
         //APLICAÇÃO DE INSULINA LOCAIS E TECNICAS
         '/aplicando-insulina-homepage': (context) => AplicandoInsulinaHomePage(),
-        '/dispositivos-para-aplicacao': (context) => DispositivosParaAplicacaoInsulinaPage(),
-        '/tecnica-de-aplicacao-de-insulina-com-diferentes-dispositivos': (context) => TecnicasDeAplicacaoHomePage(),
+        '/seringas': (context) => SeringasPage(),
+        '/tecnica-de-aplicacao-de-insulina-homepage': (context) => TecnicasDeAplicacaoHomePage(),
         '/tecnicas-de-aplicacao-de-insulina': (context) => TecnicasDeAplicacaoDeInsulinaPage(),
+        '/dispositivos-para-aplicacao-homepage': (context) => DispositivosParaAplicacaoInsulinaHomePage(),
         
         //LOCAIS DE APLICAÇÂO
 

@@ -4,12 +4,12 @@ import 'package:projeto_diabetes/CustomAppBar.dart';
 
 
 
-class AplicandoInsulinaHomePage extends StatelessWidget {
+class DispositivosParaAplicacaoInsulinaHomePage extends StatelessWidget {
   static String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: CustomAppBar(title: 'Aplicando Insulina'),
+        appBar: CustomAppBar(title: 'Dispositivos para aplicação da insulina'),
         body: Container(
           // color: Colors.grey[400],
           child: ListView(
@@ -22,11 +22,13 @@ class AplicandoInsulinaHomePage extends StatelessWidget {
                     children: [
                       
                       CategoryRowWidget(
-                          title: 'Dispositivos para aplicação de insulina', route: '/dispositivos-para-aplicacao-homepage'),
+                          title: 'Canetas', route: '/canetas'),
                       CategoryRowWidget(
-                          title: 'Técninca de aplicação', route: '/tecnica-de-aplicacao-de-insulina-homepage'),
+                          title: 'Seringas', route: '/seringas'),
                       CategoryRowWidget(
-                          title: 'Locais de aplicação de insulina', route: '/locais-de-aplicacao'),
+                          title: 'Agulhas', route: '/agulhas'),
+                      CategoryRowWidget(
+                          title: 'iPort', route: '/iport'),
 
                     ],
                   )

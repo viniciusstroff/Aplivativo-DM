@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
+import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
 // import 'package:flutter/services.dart';
 
@@ -23,7 +24,8 @@ class TiposDeInsulinaTempoDeAcaoPage extends StatelessWidget {
               delegate: SliverChildListDelegate(
                 [ 
                   
-                  imageDetails2(context, 'assets/images/tipos-de-insulina-e-tempo-de-acao2.jpg', tagname:'tipos-de-insulina', title: 'Tipos de Insulina e Tempo de ação', text:'(SBD, 2020)' ),
+                  imageDetails2(context, 'assets/images/tipos-de-insulina-e-tempo-de-acao.PNG', tagname:'tipos-de-insulina', title: 'Tipos de Insulina e Tempo de ação', text:'(SBD, 2020)' ),
+                  ReferenceTextComponent(text: 'Adaptado de: McMahon GT et al. Intention to treat - Initiating insulin and the 4-T Study. N Engl J Med 2007; 357 (17):1759-61.',),
                   Divider(),
                   imageDetails2(context, 'assets/images/propriedades-farmaceuticas-das-insulinas-e-analogos.jpg', tagname:'propriedades-farmaceuticas-das-insulinas-e-analogos', text:'Adaptado de CONDUTA TERAPÊUTICA NO\n DIABETES TIPO 1: ALGORITMO SBD 2020' ),
                 ]
@@ -41,11 +43,11 @@ class TiposDeInsulinaTempoDeAcaoPage extends StatelessWidget {
 Widget imageDetails2(context, String image, {String tagname, String text, String title}) {
   bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   double height = isPortrait
-      ? MediaQuery.of(context).size.height /2
+      ? MediaQuery.of(context).size.height /3
       : MediaQuery.of(context).size.height ;
 
   double width = isPortrait
-      ? MediaQuery.of(context).size.width / 1.1
+      ? MediaQuery.of(context).size.width 
       : MediaQuery.of(context).size.width / 1.5;
 
   return Container(
@@ -61,7 +63,7 @@ Widget imageDetails2(context, String image, {String tagname, String text, String
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails(title, text, image, tagname);
+              return ImageDetails(title:title, text:text, image:image, tag:tagname, width: width, height: height,);
             }));
           },
         ),

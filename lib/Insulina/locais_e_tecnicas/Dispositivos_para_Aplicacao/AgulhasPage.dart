@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_diabetes/CustomAppBar.dart';
 import 'package:projeto_diabetes/Model/agulha.dart';
 import 'package:projeto_diabetes/components/ImageDetails.dart';
 import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
@@ -9,14 +10,14 @@ class AgulhasPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: CustomAppBar(title: 'Técnicas de Aplicação'),
+        appBar: CustomAppBar(title: 'Agulhas'),
         body: CustomScrollView(slivers: <Widget>[
       SliverList(
         delegate: SliverChildListDelegate([
           Container(
             margin: EdgeInsets.all(1.0),
             child: Column(children: [
-              SimpleTitleComponent(text: 'Agulhas',),
+              // SimpleTitleComponent(text: 'Agulhas',),
              
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,

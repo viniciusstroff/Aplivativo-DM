@@ -22,7 +22,7 @@ class ImageComponent extends StatelessWidget {
             slivers: <Widget>[
           SliverList(
             delegate: SliverChildListDelegate(
-                [expandedImage(context, this.tag, this.image, this.text)]),
+                [expandedImage(context, tag:this.tag, image:this.image, text:this.text)]),
           )
             ],
           ),
@@ -44,13 +44,13 @@ Widget imageDetails2(context, String image, {String imageDescription, String tag
             child: Column(
               children: <Widget>[
                 Image.asset(image,
-                    height: MediaQuery.of(context).size.height * 0.3),
+                    height: MediaQuery.of(context).size.height),
               ],
             ),
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails('Locais de Aplicação', imageDescription, image, tagImage);
+              return ImageDetails(title:'Locais de Aplicação', text:imageDescription, image:image, tag:tagImage);
             }));
           },
         ),

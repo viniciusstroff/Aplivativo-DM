@@ -89,7 +89,7 @@ Widget imageDetails2(context, String image, [String tagname, String text]) {
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails('i-Port', '', image, tagname);
+              return ImageDetails(title:'i-Port', text:'', image:image, tag:tagname);
             }));
           },
         ),

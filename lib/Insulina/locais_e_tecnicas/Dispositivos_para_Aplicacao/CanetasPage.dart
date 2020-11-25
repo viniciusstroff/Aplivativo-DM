@@ -13,11 +13,11 @@ class CanetasPage extends StatelessWidget {
         body: Container(
           child: CustomScrollView(
             slivers: <Widget>[
-              // CustomSliverAppBar(title: "Técnicas de Aplicação",),
+              CustomSliverAppBar(title: "Canetas",),
               SliverList(
                 delegate: SliverChildListDelegate(
                   [
-                    SimpleTitleComponent(text: 'Canetas' , textSize: 18,),
+                    // SimpleTitleComponent(text: 'Canetas' , textSize: 18,),
                     SimpleTextComponent(text:'Existem canetas recarregáveis e descartáveis.'),
 
                     SimpleTextComponent(text:'As canetas recarregáveis são para uso com insulina U100, com refil de 3 mL. A caneta recarregável e o refil de insulina devem ser do mesmo fabricante, para garantir encaixe perfeito, registro e injeção da dose corretos.'),

@@ -79,7 +79,7 @@ Widget imageDetails2(context, String image, [String tagname, String text]) {
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails('Advento da Insulina', '', image, tagname);
+              return ImageDetails(title:'Advento da Insulina', text:'', image:image, tag:tagname);
             }));
           },
         ),

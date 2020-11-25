@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AgulhasPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/AplicarInsulinaPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/CanetasPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/HomogeneizacaoPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/IportPage.dart';
 import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TecnicasDeAplicacaoDeInsulinaPage.dart';
-import 'package:projeto_diabetes/Insulina/locais_e_tecnicas/Tecnicas_de_Aplicacao/TratamentoIntensivoPage.dart';
-
-
 
 class TecnicasDeAplicacaoHomePage extends StatefulWidget{
   @override
@@ -21,13 +14,13 @@ class _TecnicasDeAplicacaoHomePageState extends State<TecnicasDeAplicacaoHomePag
   String currentTitle = "";
 
   List<StatelessWidget>pages = [
-    CanetasPage(),
-    AgulhasPage(),
+    // CanetasPage(),
+    // AgulhasPage(),
     AplicarInsulinaPage(),
     TecnicasDeAplicacaoDeInsulinaPage(),
     // HomogeineizacaoPage(),
-    IportPage(),
-    TratamentoIntensivoPage()
+    // IportPage(),
+    // TratamentoIntensivoPage()
 
   ]; 
 
@@ -38,13 +31,13 @@ class _TecnicasDeAplicacaoHomePageState extends State<TecnicasDeAplicacaoHomePag
   // };
 
   List<String> titles = [
-    "Técnica de Aplicação de Insulina\ncom os diferentes dispositivos",
-    "Técnica de Aplicação de Insulina\ncom os diferentes dispositivos",
+    // "Técnica de Aplicação de Insulina\ncom os diferentes dispositivos",
+    // "Técnica de Aplicação de Insulina\ncom os diferentes dispositivos",
     "Onde será aplicada a Insulina?",
     "Técnica de Aplicação de Insulina",
     // "Homogeneização da Insulina NPH",
-    "i-Port",
-    "Número de aplicações\nno tratamento intensivo",
+    // "i-Port",
+    // "Número de aplicações\nno tratamento intensivo",
 
   ];
 

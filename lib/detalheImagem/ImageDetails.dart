@@ -6,7 +6,9 @@ class ImageDetails extends StatelessWidget {
   final String text;
   final String image;
   final String tag;
-  ImageDetails([this.title, this.text, this.image, this.tag]);
+  final double height;
+  final double width;
+  ImageDetails({this.title, this.text, this.image, this.tag, this.height, this.width});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class ImageDetails extends StatelessWidget {
             slivers: <Widget>[
           SliverList(
             delegate: SliverChildListDelegate(
-                [expandedImage(context, this.tag, this.image, this.text)]),
+                [expandedImage(context, tag:this.tag, image:this.image, text:this.text, width: this.width, height: this.height)]),
           )
             ],
           ),
@@ -26,15 +28,7 @@ class ImageDetails extends StatelessWidget {
   }
 }
 
-Widget expandedImage(context, [tag, image, text]) {
- bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
-  double height = isPortrait
-      ? MediaQuery.of(context).size.height 
-      : MediaQuery.of(context).size.height ;
-
-  double width = isPortrait
-      ? MediaQuery.of(context).size.width 
-      : MediaQuery.of(context).size.width ;
+Widget expandedImage(context, {String tag, String image, String text, double width, double height}) {
   return Column(
 
     children: <Widget>[
@@ -45,7 +39,7 @@ Widget expandedImage(context, [tag, image, text]) {
             child: Image.asset(
               image,
               width: width,
-              height: height ,
+              height: height,
             ),
           ),
         ),

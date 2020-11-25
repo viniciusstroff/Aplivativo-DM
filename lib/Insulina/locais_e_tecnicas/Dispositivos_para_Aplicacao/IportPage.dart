@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/CustomAppBar.dart';
 import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
+import 'package:projeto_diabetes/components/SimpleTitleComponent.dart';
 import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
 
 class IportPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: CustomAppBar(title: 'i-Port'),
+        appBar: CustomAppBar(title: 'i-Port'),
         body: Container(
           child: CustomScrollView(
             slivers: <Widget>[
@@ -47,7 +48,10 @@ Widget detailsBody(context) {
           SimpleTextComponent(text: 'Utilizar seringas ou canetas: agulhas de 5 a 8mm para aplicar.',),
           SimpleTextComponent(text:'Manter intervalo de 60 minutos entre aplicações basal e bolus.',),
           imageDetails2(context, 'assets/images/ilustracao-iport.jpeg', 'ilustrando-iport'),
-          imageDetails2(context, 'assets/images/aplicando-iport.jpeg', 'aplicando-iport', 'www.i-port.com')
+          imageDetails2(context, 'assets/images/aplicando-iport.jpeg', 'aplicando-iport', 'www.i-port.com'),
+          Divider(height: 100, color: Colors.white,),
+          SimpleTitleComponent(text: 'Número de aplicações no tratamento intensivo', textSize: 16,),
+          imageDetails2(context, 'assets/images/multiplas-doses-insulina.jpeg', '', '*MDI: Múltiplas doses de insulina'),
         ],
       ));
 }
@@ -55,7 +59,7 @@ Widget detailsBody(context) {
 Widget imageDetails2(context, String image, [String tagname, String text]) {
    bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   double height = isPortrait
-      ? MediaQuery.of(context).size.height /2
+      ? MediaQuery.of(context).size.height /3
       : MediaQuery.of(context).size.height /1.5 ;
 
   double width = isPortrait
@@ -73,7 +77,7 @@ Widget imageDetails2(context, String image, [String tagname, String text]) {
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails('i-Port', '', image, tagname);
+              return ImageDetails(title:'i-Port', text:'', image:image, tag:tagname);
             }));
           },
         ),

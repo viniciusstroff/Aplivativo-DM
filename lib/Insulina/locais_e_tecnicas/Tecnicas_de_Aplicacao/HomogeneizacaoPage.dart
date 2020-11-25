@@ -59,7 +59,7 @@ Widget imageDetails2(context, String image, {String tagname, String text}) {
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails('', '', image, tagname);
+              return ImageDetails(title:'', text:'', image:image, tag:tagname);
             }));
           },
         ),
@@ -90,7 +90,7 @@ Widget imageDetails3(context, String image){
         ),
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return ImageDetails('Homogeneização',"Jehie PM, et al. Lancet, 1999. 354(9190) 1604-7", image, 'homogeneizacao');
+            return ImageDetails(title:'Homogeneização',text:"Jehie PM, et al. Lancet, 1999. 354(9190) 1604-7", image:image, tag:'homogeneizacao');
           }));
         },
       ),

@@ -41,7 +41,7 @@ Widget imageDetails2(context, String image, [String tagname, String text]) {
           ),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return ImageDetails('Exercício', text, image, tagname);
+              return ImageDetails(title:'Exercício', text:text, image:image, tag:tagname);
             }));
           },
         ),
