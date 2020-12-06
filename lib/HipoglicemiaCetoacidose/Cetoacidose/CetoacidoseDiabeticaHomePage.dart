@@ -1,6 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:projeto_diabetes/CategoryRowWidget.dart';
+import 'package:projeto_diabetes/CustomAppBar.dart';
 import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Cetoacidose/CetoacidoseDiabeticaPage.dart';
 import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Cetoacidose/CetoacidoseDiabeticaSinaisSintomasPage.dart';
 import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Cetoacidose/CetoacidoseDiabeticaTratamentoPage.dart';
@@ -11,80 +13,34 @@ class CetoacidoseDiabeticaHomePage extends StatefulWidget {
       _CetoacidoseDiabeticaHomePageState();
 }
 
-class _CetoacidoseDiabeticaHomePageState
-    extends State<CetoacidoseDiabeticaHomePage> {
-  PageController pageController = PageController(initialPage: 0);
-  int currentIndex = 0;
-  String currentTitle = "";
-
-  // Map pages ={
-  //   CetoacidoseDiabeticaPage(text: "",): "Cetoacidose Diabética - CAD",
-  //   CetoacidoseDiabeticaSinaisSintomasPage(text: "",): "Cetoacidose Diabética - CAD - Sinais e Sintomas",
-  //   CetoacidoseDiabeticaTratamentoPage(): "Cetoacidose Diabética - CAD - Tratamento"
-  // };
-  List pages = [
-    CetoacidoseDiabeticaPage(text: ""),
-    CetoacidoseDiabeticaSinaisSintomasPage(text: ""),
-    CetoacidoseDiabeticaTratamentoPage()
-  ];
-  List<String> titles = [
-    "Cetoacidose Diabética CAD",
-    "Cetoacidose Diabética CAD \n        Sinais e Sintomas",
-    "Cetoacidose Diabética CAD \n            Tratamento"
-  ];
-
+class _CetoacidoseDiabeticaHomePageState extends State<CetoacidoseDiabeticaHomePage> {
   @override
   Widget build(BuildContext context) {
-    IconButton previousPage = currentIndex > 0
-        ? IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              pageController.previousPage(
-                  duration: Duration(milliseconds: 250), curve: Curves.linear);
-            })
-        : null;
-    IconButton nextPage = currentIndex < pages.length - 1
-        ? IconButton(
-            icon: Icon(Icons.arrow_forward),
-            onPressed: () {
-              pageController.nextPage(
-                  duration: Duration(milliseconds: 250), curve: Curves.linear);
-            })
-        : IconButton(
-            icon: Icon(null),
-            onPressed: () {},
-          );
-
     return Scaffold(
-        appBar: AppBar(
-          automaticallyImplyLeading: true,
-          leading: previousPage,
-          centerTitle: true,
-          title: FittedBox(
-            fit: BoxFit.fitWidth,
-            child: Text(
-              titles[currentIndex],
-              maxLines: 3,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20.0,
-              ),
-              textAlign: TextAlign.justify,
+        appBar: CustomAppBar(title: 'Cetoacidose Diabética - CAD'),
+        body: Container(
+          child: ListView(
+          scrollDirection: Axis.vertical,
+          children:[
+            Container(
+              
+                child: 
+                  Column(
+                    children: [
+                      
+                      CategoryRowWidget(
+                          title: 'Cetoacidose Diabetetica CAD', route: '/glicemia-cetoacidose-diabetica'),
+                      CategoryRowWidget(
+                          title: 'Cetoacidose Diabetetica CAD - Sinais e Sintomas', route: '/glicemia-cetoacidose-diabetica-sinais-e-sintomas'),
+                      CategoryRowWidget(
+                          title: 'Cetoacidose Diabetetica CAD - Tratamento', route: '/glicemia-cetoacidose-diabetica-tratamento')
+
+                    ],
+                  )
             ),
-          ),
-          actions: [nextPage],
-        ),
-        body: PageView(
-          controller: pageController,
-          children: <Widget>[
-            ...pages,
+            // )
           ],
-          onPageChanged: (index) {
-            setState(() {
-              currentIndex = index;
-              // currentTitle = titles[index];
-            });
-          },
-        ));
+        )));
   }
+
 }

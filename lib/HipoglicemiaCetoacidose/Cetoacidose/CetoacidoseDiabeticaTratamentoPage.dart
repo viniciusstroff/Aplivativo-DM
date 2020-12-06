@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextWithPointComponent.dart';
@@ -10,6 +11,9 @@ class CetoacidoseDiabeticaTratamentoPage extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
+          CustomSliverAppBar(
+            title: "Cetoacidose Diabética CAD - Tratamento",
+          ),
           SliverList(
             delegate: SliverChildListDelegate(
               [
