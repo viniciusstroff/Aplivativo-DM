@@ -24,9 +24,9 @@ class TiposDeInsulinaTempoDeAcaoPage extends StatelessWidget {
               delegate: SliverChildListDelegate(
                 [ 
                   
-                  imageDetails2(context, 'assets/images/tipos-de-insulina-e-tempo-de-acao.PNG', tagname:'tipos-de-insulina', title: 'Tipos de Insulina e Tempo de ação', text:'(SBD, 2020)' ),
+                  imageDetails2(context, 'assets/images/tipos-de-insulina-e-tempo-de-acao2.jpg', tagname:'tipos-de-insulina', title: 'Tipos de Insulina e Tempo de ação', text:'(SBD, 2020)' ),
                   ReferenceTextComponent(text: 'Adaptado de: McMahon GT et al. Intention to treat - Initiating insulin and the 4-T Study. N Engl J Med 2007; 357 (17):1759-61.',),
-                  Divider(),
+                  Divider(height: 50, color: Colors.white,),
                   imageDetails2(context, 'assets/images/propriedades-farmaceuticas-das-insulinas-e-analogos.jpg', tagname:'propriedades-farmaceuticas-das-insulinas-e-analogos', text:'Adaptado de CONDUTA TERAPÊUTICA NO\n DIABETES TIPO 1: ALGORITMO SBD 2020' ),
                 ]
               ),

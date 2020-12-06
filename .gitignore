@@ -29,7 +29,7 @@
 .pub-cache/
 .pub/
 /build/
-.build
+.build/
 
 # Web related
 lib/generated_plugin_registrant.dart
@@ -46,3 +46,7 @@ lib/generated_plugin_registrant.dart
 .flutter-plugins-dependencies
 .packages
 .dart_tool/flutter_build/a93c5f8309e23502395f97f7b913ea8e/.filecache
+.flutter-plugins-dependencies
+*.flat
+.flutter-plugins-dependencies
+.gitignore
