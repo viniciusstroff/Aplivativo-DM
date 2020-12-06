@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextWithLastWordsBoldComponent.dart';
@@ -9,6 +10,9 @@ class HipoglicemiaPage extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
+          CustomSliverAppBar(
+            title: "Hipoglicemia",
+          ),
           SliverList(
             delegate: SliverChildListDelegate(
               [

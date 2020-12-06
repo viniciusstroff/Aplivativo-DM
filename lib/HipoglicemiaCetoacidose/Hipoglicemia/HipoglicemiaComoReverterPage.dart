@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextComponent.dart';
 import 'package:projeto_diabetes/components/SimpleTextWithPointComponent.dart';
+import 'package:projeto_diabetes/components/SimpleTitleComponent.dart';
 
 class HipoglicemiaComoReverterPage extends StatelessWidget {
   @override
@@ -9,6 +11,9 @@ class HipoglicemiaComoReverterPage extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
+          CustomSliverAppBar(
+            title: "Hipoglicemia como reverter?",
+          ),
           SliverList(
             delegate: SliverChildListDelegate(
               [
@@ -20,9 +25,9 @@ class HipoglicemiaComoReverterPage extends StatelessWidget {
                 Divider(
                   height: 20,
                 ),
-                SimpleTextComponent(text: 'Se paciente sonolento:', textSize: 20,),
+                SimpleTitleComponent(text: 'Se paciente sonolento:', textSize: 16,),
                 SimpleTextWithPointComponent(text: 'Administrar (friccionar) glicose líquida ou mel na região interna das bochechas e na gengiva;'),
-                SimpleTextComponent(text: 'Em hipoglicemias graves (paciente inconsciente ou crise convulsiva):'),
+                SimpleTitleComponent(text: 'Em hipoglicemias graves (paciente inconsciente ou crise convulsiva):', textSize: 16),
                 SimpleTextWithPointComponent(text: 'Glucagon (se disponível), subcutâneo ou intramuscular na dose de 1mg para adolescentes e adultos, 0,5mg para crianças;',),
                 SimpleTextWithPointComponent(text: 'Glicose endovenosa conforme prescrição ou protocolo da instituição.'),
                 ReferenceTextComponent(text: "Insulinas - Insulinizando o paciente com diabetes - (2019)" ,)
