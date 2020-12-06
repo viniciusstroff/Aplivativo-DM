@@ -16,7 +16,7 @@ class CetoacidoseDiabeticaSinaisSintomasPage extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           CustomSliverAppBar(
-            title: "Cetoacidose Diabética CAD - Sinais e Sintomas",
+            title: "Cetoacidose Diabética CAD - Sinais e Sintomas" ,
           ),
           SliverList(
             delegate: SliverChildListDelegate(

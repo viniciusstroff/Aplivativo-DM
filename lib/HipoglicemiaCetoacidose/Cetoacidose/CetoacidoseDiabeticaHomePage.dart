@@ -3,9 +3,6 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/CategoryRowWidget.dart';
 import 'package:projeto_diabetes/CustomAppBar.dart';
-import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Cetoacidose/CetoacidoseDiabeticaPage.dart';
-import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Cetoacidose/CetoacidoseDiabeticaSinaisSintomasPage.dart';
-import 'package:projeto_diabetes/HipoglicemiaCetoacidose/Cetoacidose/CetoacidoseDiabeticaTratamentoPage.dart';
 
 class CetoacidoseDiabeticaHomePage extends StatefulWidget {
   @override

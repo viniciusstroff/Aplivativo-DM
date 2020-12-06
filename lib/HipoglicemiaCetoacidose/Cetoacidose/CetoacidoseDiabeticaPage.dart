@@ -14,7 +14,7 @@ class CetoacidoseDiabeticaPage extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           CustomSliverAppBar(
-            title: "Cetoacidose Diabética CAD",
+            title: "Cetoacidose Diabética CAD" ,
           ),
           SliverList(
             delegate: SliverChildListDelegate(
