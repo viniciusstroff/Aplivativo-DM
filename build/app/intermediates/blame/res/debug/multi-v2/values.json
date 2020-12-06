@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Desenvolvimento\\vinicius\\projeto_diabetes\\Aplivativo-DM\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Desenvolvimento\\vinicius\\projeto_diabetes\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Desenvolvimento\\vinicius\\projeto_diabetes\\Aplivativo-DM\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Desenvolvimento\\vinicius\\projeto_diabetes\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

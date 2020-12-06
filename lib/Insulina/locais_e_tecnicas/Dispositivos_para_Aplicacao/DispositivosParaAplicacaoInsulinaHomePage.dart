@@ -11,6 +11,7 @@ class DispositivosParaAplicacaoInsulinaHomePage extends StatelessWidget {
     return Scaffold(
         appBar: CustomAppBar(title: 'Dispositivos para aplicação da insulina'),
         body: Container(
+          // color: Colors.grey[400],
           child: ListView(
           scrollDirection: Axis.vertical,
           children:[

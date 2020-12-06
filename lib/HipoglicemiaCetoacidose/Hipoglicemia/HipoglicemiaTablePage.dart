@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:projeto_diabetes/Model/hipoglicemia.dart';
-import 'package:projeto_diabetes/components/CustomSliverAppBar.dart';
 import 'package:projeto_diabetes/components/ReferenceTextComponent.dart';
 import 'package:projeto_diabetes/data/data.dart';
 
@@ -16,9 +15,6 @@ class HipoglicemiaTablePage extends StatelessWidget {
       
         body: CustomScrollView(
         slivers: <Widget>[
-          CustomSliverAppBar(
-            title: "Níveis de Hipoglicemia",
-          ),
           SliverList(
             delegate: SliverChildListDelegate(
               [
