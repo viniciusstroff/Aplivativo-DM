@@ -37,7 +37,7 @@ dev_dependencies:
 flutter_icons:
   ios: true
   android: true
-  image_path: "assets/launcher/icone-app-transparente.jpg"
+  image_path: "assets/launcher/icone-app-transparente2.png"
   
 
 # For information on the generic Dart part of this file, see the
