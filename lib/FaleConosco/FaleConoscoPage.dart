@@ -79,7 +79,7 @@ class _FaleConoscoPageState extends State<FaleConoscoPage> {
   _enviarEmail() async{
     final Uri _emailLaunchUri = Uri(
       scheme: 'mailto',
-      path: 'stroffproductions@gmail.com',
+      path: 'suporte.dicabetes@gmail.com',
       queryParameters: {
         'subject': '$assunto',
         'body': 'De $nome'

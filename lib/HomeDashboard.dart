@@ -5,7 +5,7 @@ import 'sideleft-menu.dart';
 import 'package:projeto_diabetes/CustomAppBar.dart';
 
 class HomeDashboard extends StatelessWidget {
-  static const title = "Diabetes";
+  static const title = "Dicabetes";
 
   @override
   Widget build(BuildContext context) {

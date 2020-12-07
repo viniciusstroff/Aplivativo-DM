@@ -28,9 +28,9 @@ class _CetoacidoseDiabeticaHomePageState extends State<CetoacidoseDiabeticaHomeP
                       CategoryRowWidget(
                           title: 'Cetoacidose Diabetetica CAD', route: '/glicemia-cetoacidose-diabetica'),
                       CategoryRowWidget(
-                          title: 'Cetoacidose Diabetetica CAD - Sinais e Sintomas', route: '/glicemia-cetoacidose-diabetica-sinais-e-sintomas'),
+                          title: 'Sinais e Sintomas', route: '/glicemia-cetoacidose-diabetica-sinais-e-sintomas'),
                       CategoryRowWidget(
-                          title: 'Cetoacidose Diabetetica CAD - Tratamento', route: '/glicemia-cetoacidose-diabetica-tratamento')
+                          title: 'Tratamento', route: '/glicemia-cetoacidose-diabetica-tratamento')
 
                     ],
                   )

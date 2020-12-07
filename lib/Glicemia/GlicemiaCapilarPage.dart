@@ -7,6 +7,15 @@ import 'package:projeto_diabetes/detalheImagem/ImageDetails.dart';
 class GlicemiaCapilarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    bool isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+    double height = isPortrait
+        ? MediaQuery.of(context).size.height
+        : MediaQuery.of(context).size.height;
+
+    double width = isPortrait
+        ? MediaQuery.of(context).size.width * 0.3
+        : MediaQuery.of(context).size.width * 0.27;
+
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
@@ -19,7 +28,7 @@ class GlicemiaCapilarPage extends StatelessWidget {
                 SimpleTextComponent(
                     text:
                         'A automonitorização da glicemia capilar (AMGC) é efetuada com a inserção de uma gota de sangue capilar em uma fita descartável acoplada a um dispositivo, o glicosímetro.'),
-                //imageDetails2(context, 'assets/images/exercicio.gif', 'exercícios'),
+                imageDetails2(context, image:'assets/images/aplicacao-glicemia.gif', tagname:'glicemia-aplicacao', height: height/2),
                 // Image.asset("assets/images/exercicio.gif"),
                 // FadeInImage.memoryNetwork(placeholder: 'assets/images/exercicio.gif', image: 'assets/images/exercicio.gif',),
                 SimpleTextComponent(
@@ -49,4 +58,29 @@ class GlicemiaCapilarPage extends StatelessWidget {
       ),
     );
   }
+}
+Widget imageDetails2(context, {String image, String tagname, String text, double height, double width}) {
+  return Center(
+    child: Column(
+      children: <Widget>[
+        GestureDetector(
+          child: Hero(
+            tag: tagname,
+            child: Image.asset(image,
+                width: width ,
+                height: height),
+          ),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return ImageDetails(title:text, text:text, image:image, tag:tagname);
+            }));
+          },
+        ),
+         Text(text != null ? text : '',
+            style: TextStyle(
+              fontSize: 16,
+            ))
+      ],
+    ),
+  );
 }
