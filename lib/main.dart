@@ -52,6 +52,7 @@ import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica/HomePage2.dart';
 // import 'package:projeto_diabetes/Locais_de_aplicacao_e_tecnica2/LocaisAplicacaoPage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasHomePage.dart';
 import 'package:projeto_diabetes/Referencias/ReferenciasPage.dart';
+import 'package:projeto_diabetes/SobreAplicativo/SobreAplicativoPage.dart';
 import 'package:projeto_diabetes/SobreDesenvolvimento/SobreDesenvolvimentoPage.dart';
 import 'package:projeto_diabetes/curiosidades/CuriositiesHomePage.dart';
 import 'package:projeto_diabetes/curiosidades/DiaMundialDiabetesPage.dart';
@@ -167,7 +168,10 @@ class MyApp extends StatelessWidget {
         '/fale-conosco': (context) => FaleConoscoPage(),
 
         //SOBRE DESENVOLVIMENTO
-        '/sobre-desenvolvimento': (context) => SobreDesenvolvimento()
+        '/sobre-desenvolvimento': (context) => SobreDesenvolvimento(),
+
+        //SOBRE DESENVOLVIMENTO
+        '/sobre-aplicativo': (context) => SobreAplicativo()
 
       },
     );

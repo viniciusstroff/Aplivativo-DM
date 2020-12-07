@@ -53,11 +53,19 @@ class _SideLeftMenuState extends State<SideLeftMenu> {
           Divider(),
           ListTile(
             leading: Icon(Icons.device_unknown),//sticky_note_2
-            title: Text("Sobre o Desenvolvimento"),
+            title: Text("Sobre o Aplicativo"),
             onTap: () {
-              Navigator.pushNamed(context, '/sobre-desenvolvimento');
+              Navigator.pushNamed(context, '/sobre-aplicativo');
             },
           ),
+          // Divider(),
+          // ListTile(
+          //   leading: Icon(Icons.device_unknown),//sticky_note_2
+          //   title: Text("Sobre o Desenvolvimento"),
+          //   onTap: () {
+          //     Navigator.pushNamed(context, '/sobre-desenvolvimento');
+          //   },
+          // ),
           Divider(),
           ListTile(
             leading: Icon(Icons.mail),
