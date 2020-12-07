@@ -11,7 +11,6 @@ class InsulinaHomePage extends StatelessWidget {
     return Scaffold(
         appBar: CustomAppBar(title: 'Insulina'),
         body: Container(
-          color: Colors.grey[400],
           child: ListView(
           scrollDirection: Axis.vertical,
           children:[

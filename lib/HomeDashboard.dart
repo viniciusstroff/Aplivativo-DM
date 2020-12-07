@@ -32,8 +32,10 @@ class DashboardBody extends StatelessWidget {
                       categoryModel: getCategory('sinais-e-sintomas'),
                       route: '/diabetes-homepage'),
                   CategoryItemWidget(
-                      categoryModel: getCategory('insumos'),
-                      route: '/insumos-homepage'),
+                      categoryModel:
+                          getCategory('locais-e-tecnincas-de-aplicacao'),
+                      route: '/aplicando-insulina-homepage'),
+                 
                 ],
               ),
               Row(
@@ -52,12 +54,11 @@ class DashboardBody extends StatelessWidget {
                 children: [
                   CategoryItemWidget(
                       categoryModel:
-                          getCategory('locais-e-tecnincas-de-aplicacao'),
-                      route: '/aplicando-insulina-homepage'),
-                  CategoryItemWidget(
-                      categoryModel:
                           getCategory('hipoglicemia-e-cetoacidose'),
                       route: '/hipoglicemia-e-cetoacidose-homepage'),
+                  CategoryItemWidget(
+                      categoryModel: getCategory('insumos'),
+                      route: '/insumos-homepage'),
                 ],
               ),
             ],

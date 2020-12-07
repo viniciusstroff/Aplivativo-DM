@@ -11,7 +11,6 @@ class InsumosHomePage extends StatelessWidget {
     return Scaffold(
         appBar: CustomAppBar(title: 'Insumos'),
         body: Container(
-          color: Colors.grey[400],
           child: ListView(
           scrollDirection: Axis.vertical,
           children:[
